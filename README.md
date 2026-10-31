@@ -20,7 +20,7 @@
 7. [Render Deployment Guide (Single URL)](#-render-deployment-guide-single-url)
 8. [REST API Documentation](#-rest-api-documentation)
 9. [Advisory & Decision-Support Notice](#-advisory--decision-support-notice)
-
+10. 🚀 **Live Web Application:** [https://crop-recommendation-system-p4oe.onrender.com/](https://crop-recommendation-system-p4oe.onrender.com/)
 ---
 
 ## 🎯 Project Overview
