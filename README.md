@@ -17,10 +17,9 @@
 4. [Agronomic Recommendation Methodology](#-agronomic-recommendation-methodology)
 5. [Project Directory Layout](#-project-directory-layout)
 6. [Quick Start & Local Setup](#-quick-start--local-setup)
-7. [Render Deployment Guide (Single URL)](#-render-deployment-guide-single-url)
-8. [REST API Documentation](#-rest-api-documentation)
-9. [Advisory & Decision-Support Notice](#-advisory--decision-support-notice)
-10. 🚀 **Live Web Application:** [https://crop-recommendation-system-p4oe.onrender.com/](https://crop-recommendation-system-p4oe.onrender.com/)
+7. [REST API Documentation](#-rest-api-documentation)
+8. [Advisory & Decision-Support Notice](#-advisory--decision-support-notice)
+9. 🚀 **Live Web Application:** [https://crop-recommendation-system-p4oe.onrender.com/](https://crop-recommendation-system-p4oe.onrender.com/)
 ---
 
 ## 🎯 Project Overview
@@ -206,42 +205,6 @@ The application will launch on:
 To develop with instant hot-module replacement:
 1. Start the backend: `npm run dev:server` (runs Express on `localhost:5000`)
 2. In another terminal, start Vite: `npm run dev:client` (runs React on `localhost:3000` with automated proxy to `/api`)
-
----
-
-## ☁️ Render Deployment Guide (Single URL)
-
-Deploying this application to **Render** takes under 3 minutes:
-
-1. **Push to GitHub**: Push this repository to your GitHub or GitLab account.
-2. **Create New Web Service on Render**:
-   - Log into [dashboard.render.com](https://dashboard.render.com/).
-   - Click **New +** > **Web Service**.
-   - Connect your GitHub repository.
-3. **Configure Service Settings**:
-   - **Name**: `crop-recommendation-hack-p302` (or your preferred name)
-   - **Environment**: `Node`
-   - **Region**: Choose the region closest to your audience (e.g., Singapore, Frankfurt, Oregon)
-   - **Branch**: `main`
-   - **Root Directory**: *(leave blank to use workspace root)*
-   - **Build Command**:
-     ```bash
-     npm run render-build
-     ```
-     *(This runs: `cd server && npm install && cd ../client && npm install && npm run build`)*
-   - **Start Command**:
-     ```bash
-     npm start
-     ```
-     *(This runs: `node server/server.js`)*
-   - **Plan**: `Free`
-4. **Environment Variables**:
-   - `NODE_ENV`: `production`
-   - *(Optional)* `PORT`: `5000` (Render will automatically inject its own `$PORT`)
-5. **Deploy**:
-   - Click **Create Web Service**.
-   - Render will install dependencies, build the React frontend into `client/dist`, and launch `server/server.js`.
-   - Your app is now live at: `https://<your-service-name>.onrender.com`!
 
 ---
 
