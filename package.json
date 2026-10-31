@@ -1,0 +1,28 @@
+{
+  "name": "crop-recommendation-system-hack-p302",
+  "version": "1.0.0",
+  "description": "Full-stack Crop Recommendation System for College Hackathon Project HACK-P302",
+  "main": "server/server.js",
+  "scripts": {
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "install-all": "npm run install:server && npm run install:client",
+    "build": "cd client && npm run build",
+    "start": "node server/server.js",
+    "dev:server": "cd server && npm run start",
+    "dev:client": "cd client && npm run dev",
+    "render-build": "cd server && npm install && cd ../client && npm install && npm run build"
+  },
+  "keywords": [
+    "crop-recommendation",
+    "agriculture",
+    "hackathon",
+    "fullstack",
+    "express",
+    "react",
+    "vite",
+    "render"
+  ],
+  "author": "Hackathon Team HACK-P302",
+  "license": "MIT"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "crop-recommendation-server",
+  "version": "1.0.0",
+  "description": "Backend API and static server for Crop Recommendation System (HACK-P302)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "keywords": [
+    "crop-recommendation",
+    "agriculture",
+    "hackathon",
+    "node",
+    "express"
+  ],
+  "author": "Hackathon Team HACK-P302",
+  "license": "MIT"
+}
